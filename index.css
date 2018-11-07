@@ -9,6 +9,7 @@
     --primary-dark: #255d00;
     --secondary: #f57c00;
     --secondary-light: #ffad42;
+    --secondary-xlight: #ffdaaa;
     --secondary-dark: #bb4d00;
     --text-primary: #0e0e0e;
     --text-secondary: #0e0e0e;
@@ -47,6 +48,15 @@ button {
     padding: 0.2em 0.5em 0.2em 0.5em;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
 /* HELPER CLASSES */
 
 .d-flex {
@@ -67,6 +77,10 @@ button {
 
 .justify-end {
     justify-content: end;
+}
+
+.justify-end {
+    justify-content: space-between;
 }
 
 .align-center {
@@ -99,9 +113,7 @@ button {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-ul {
-    list-style-type: none;
-}
+
 
 /* HEADER STYLES */
 
@@ -432,7 +444,96 @@ span#topBar-buttons button:hover {
     margin-top: 0.5rem;
 }
 
+/* NEWSLETTER */
+
+#newsletter {
+    background-color: var(--secondary-xlight);
+}
+
+#newsletterContainer {
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+#newsletterInput {
+    height: 2rem;
+    min-width: 150px;
+    width: 50vw;
+}
+
+#submitBtn {
+    height: 2.6rem;
+    width: 4.5rem;
+    background-color: var(--secondary);
+    color: white;
+    font-size: 0.9rem;
+}
+
+#submitBtn:hover {
+    border: 1px solid white;
+    background-color: var(--secondary-dark);
+    color: white;
+    cursor: pointer;
+}
+
+#spamMsg {
+    font-size: 0.7rem;
+    max-width: 30rem;
+}
+
+/*  FOOTER */
+
+#footerMain-wrapper {
+    background-color: var(--primary);
+    color: white;
+}
+
+#footerMain-container {
+    margin: 1rem 1rem 2rem 4rem;
+    flex-wrap: wrap;
+}
+
+#footerMain-container div {
+    min-width: 200px;
+}
+
+.footerCol {
+    width: 20%;
+}
+
+.footerCol:not(:last-child) {
+    margin-right: 1rem;
+}
+
+#footerLinks-container ul li a , #footerCategories-container ul li a {
+    text-decoration: underline;
+}
+
+#footerContact-container ul li a {
+    color: yellow;
+}
+
+#footerSocialMediaIcons a {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+#bottomBar-wrapper {
+    height: 2rem;
+    background-color: var(--primary-dark);
+    color: rgb(126, 180, 129);
+    font-size: 0.8rem;
+}
+
+#bottomBar-container {
+    margin: 0.4rem 0 0.4rem 0;
+}
+
 /* ICONS */
+
+#iconsReference {
+    font-size: 0.9rem;
+}
 
 #swordIcon {
     width: 128px;
