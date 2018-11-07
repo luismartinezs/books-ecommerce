@@ -30,10 +30,12 @@
 
             <div id='logoArea-container' class='d-flex align-center'>
 
-                <div id='logo-container' class='d-flex align-center'>
-                    <img id='logo-main' src='./images/one_ring.png' alt='One Ring Logo' />
-                    <span id='tagline'><strong>B</strong>ag <strong>E</strong>nd<br /> <strong>B</strong>ooks</span>
-                </div>
+                <a id='logoAnchor' href=#>
+                    <div id='logo-container' class='d-flex align-center'>
+                        <img id='logo-main' src='./images/one_ring.png' alt='One Ring Logo' />
+                        <span id='tagline'><strong>B</strong>ag <strong>E</strong>nd<br /> <strong>B</strong>ooks</span>
+                    </div>
+                </a>
 
                 <div id='searchBar'>
                     <form>
@@ -57,7 +59,7 @@
                     <a class='nav-link'>Popular</a>
                 </li>
                 <li class='navList-item d-flex align-center justify-center'>
-                    <a class='nav-link'>Deals</a>
+                    <a class='nav-link'>Best deals</a>
                 </li>
                 <li class='navList-item d-flex align-center justify-center'>
                     <a class='nav-link'>Categories</a>
@@ -82,7 +84,8 @@
                 <div id='featuredContainer' class='d-flex align-center justify-center text-center'>
 
                     <div id='featuredBook-wrapper'>
-                        <img id='featuredBookThumbnail' src='https://images-na.ssl-images-amazon.com/images/I/51eq24cRtRL._SX331_BO1,204,203,200_.jpg' alt='lord of the rings 50th anniversary edition' />
+                        <img id='featuredBookThumbnail' src='https://images-na.ssl-images-amazon.com/images/I/51eq24cRtRL._SX331_BO1,204,203,200_.jpg'
+                            alt='lord of the rings 50th anniversary edition' />
                     </div>
 
                     <div id='featuredBox-container'>
@@ -97,11 +100,117 @@
 
         </section>
 
-        <section id='categories'>
+        <section id='popular' class='boxes-wrapper d-flex justify-center'>
+
+            <div id='popular-container' class='boxes-container d-flex d-col justify-center align-center'>
+
+                <h2>Most popular</h2>
+                <ul id='popularList' class='boxes-list d-flex justify-center'>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/51uYlDqoIyL._AC_US218_.jpg' alt='The Hobbit' />
+                        <p><a href='#'>The Hobbit</a></p>
+                    </li>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/714PP8U4G4L._AC_SR201,266_.jpg' alt='The Fall of Gondolin' />
+                        <p><a href='#'>The Fall of Gondolin</a></p>
+                    </li>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/41953X1GWGL._AC_US218_.jpg' alt='Lord of the Rings deluxe' />
+                        <p><a href='#'>The Lord of the Rings Deluxe Edition</a></p>
+                    </li>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/41mro76Ot2L._AC_US218_.jpg' alt='The Children of Húrin' />
+                        <p><a href='#'>The Children of Húrin</a></p>
+                    </li>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/5186KTZNTyL._AC_US218_.jpg' alt='Beren and Lúthien' />
+                        <p><a href='#'>Beren and Lúthien</a></p>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </section>
 
-        <section id='newest'>
+        <section id='categories' class='d-flex d-col align-center justify-center w100'>
+
+            <div id='categories-container' class='d-flex d-col justify-center align-center'>
+
+                <h2>Categories</h2>
+                <ul id='categoriesList' class='d-flex justify-center align-baseline w100'>
+
+                    <li class='categories-list-item text-center d-flex d-col justify-center align-center'>
+                        <div id='swordIcon'></div>
+                        <h3><a href='#'>Battles & Glory</a></h3>
+                    </li>
+
+                    <li class='categories-list-item text-center d-flex d-col justify-center align-center'>
+                        <div id='elfIcon'></div>
+                        <h3><a href='#'>Rivendell Poems</a></h3>
+                    </li>
+
+                    <li class='categories-list-item text-center d-flex d-col justify-center align-center'>
+                        <div id='firstAgeIcon'></div>
+                        <h3><a href='#'>First Age</a></h3>
+                    </li>
+
+                    <li class='categories-list-item text-center d-flex d-col justify-center align-center'>
+                        <div id='sauronIcon'></div>
+                        <h3><a href='#'>Dark Tales</a></h3>
+                    </li>
+
+                    <li class='categories-list-item text-center d-flex d-col justify-center align-center'>
+                        <div id='loreIcon'></div>
+                        <h3><a href='#'>Gondor Lore</a></h3>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section id='newest' class='boxes-wrapper d-flex justify-center'>
+
+            <div id='newest-container' class='boxes-container d-flex d-col justify-center align-center'>
+
+                <h2>Newest Books</h2>
+                <ul id='newestList' class='boxes-list d-flex justify-center'>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/515+ylclFEL._AC_US218_.jpg' alt='Tales from the Perilous Realm' />
+                        <p><a href='#'>Tales from the Perilous Realm</a></p>
+                    </li>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/415xT9twsbL._AC_US218_.jpg' alt='Unfinished Tales of Númenor and Middle-earth' />
+                        <p><a href='#'>Unfinished Tales of Númenor and Middle-earth</a></p>
+                    </li>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/51f35HQsz2L._AC_US218_.jpg' alt='The Complete Tolkien Companion' />
+                        <p><a href='#'>The Complete Tolkien Companion</a></p>
+                    </li>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/51eq24cRtRL._AC_US218_.jpg' alt='The Lord of the Rings: 50th Anniversary' />
+                        <p><a href='#'>The Lord of the Rings: 50th Anniversary</a></p>
+                    </li>
+
+                    <li class='boxes-list-item text-center'>
+                        <img src='https://images-na.ssl-images-amazon.com/images/I/51CFkr5ciRL._AC_US218_.jpg' alt='Beowulf: A Translation and Commentary' />
+                        <p><a href='#'>Beowulf: A Translation and Commentary</a></p>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </section>
 
@@ -112,6 +221,10 @@
     </main>
 
     <footer>
+
+        <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
     </footer>
 
