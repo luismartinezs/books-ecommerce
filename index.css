@@ -627,11 +627,27 @@ input:checked ~ .menu-content {
     margin: 0.4rem 0 0.4rem 0;
 }
 
-/* ICONS */
-
 #iconsReference {
     font-size: 0.9rem;
 }
+
+@media (max-width: 720px) {
+
+    #footerLinks-container , #footerCategories-container {
+        display: none;
+    }
+
+    #footerContact-container {
+        width: 80vw;
+    }
+
+    #iconsReference {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* ICONS */
 
 #swordIcon {
     width: 128px;
